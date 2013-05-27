@@ -1,0 +1,60 @@
+#body {
+    margin: 0;
+    padding: 0;
+    background: #999;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+#wrapper {
+    width: 854px;
+    margin: 0 auto;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+}
+
+#canvas {
+    background: #000;
+    position: absolute;
+}
+
+#container {
+    width: 854px;
+    height: 480px;
+    cursor: pointer;
+}
+
+/* full-screen seems to be affecting webkit only browsers */
+#container:-webkit-full-screen {
+    width: 100%;
+    height: 100%;
+}
+
+#container:full-screen {
+    width: 100%;
+    height: 100%;
+}
+
+#fps {
+    position: absolute;
+    left: 3px;
+    top: 4px;
+    color: #fff;
+}
+
+#debug {
+    position: absolute;
+    left: 3px;
+    top: 8px;
+    color: #fff;
+}
+
+#text {
+    position: absolute;
+    top: 480px;
+    padding: 10px 20px 20px 20px;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>WebCraft</title>
+    <link rel="stylesheet" href="css/default.css">
+    <script src="lib/jquery-1.7.2.min.js"></script>
+    <script src="lib/gl-matrix-min.js"></script>
+    <script src="src/Utils.js"></script>
+    <script src="src/Main.js"></script>
+    <script src="src/input/Input.js"></script>
+    <script src="src/gfx/Renderer.js"></script>
+    <script src="src/gfx/Renderable.js"></script>
+    <script src="src/gfx/WorldRenderer.js"></script>
+    <script src="src/gfx/Chunk.js"></script>
+    <script src="src/block/Block.js"></script>
+    <script src="src/world/World.js"></script>
+    <script src="src/entity/AABB.js"></script>
+    <script src="src/entity/Entity.js"></script>
+    <script src="src/entity/EntityPlayer.js"></script>
+    
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-33182253-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+</head>
+<body id="body">
+    <div id="wrapper">
+        <div id="container">
+            <canvas id="canvas"></canvas>
+            <div id="fps"></div>
+            <div id="debug"></div>
+        </div>
+        <div id="text">
+            Minecraft like voxel engine build in JavaScript. It uses WebGL, which most newer browsers support.<br>
+            Feel free to see the (undocumented) code using Ctrl + U.<br>
+            <br>
+            Controls:<br>
+            Clicking the canvas makes the game fullscreen, press Esc to exit.<br>
+            WASD to move the player<br>
+            Mouse to move the camera<br>
+            Left mouse click removed the selected block<br>
+            Right mouse click places the selected block<br>
+        </div>
+    </div>
+</body>
+</html>
